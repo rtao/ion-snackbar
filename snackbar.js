@@ -4,7 +4,7 @@ angular.module("snackbar", ['ngAnimate']).service('$snackbar', function($http, $
   var timeout = {};
   var template = $http({
     method: 'GET',
-    url: './snackbar.html'
+    url: 'main/templates/system/snackbar.html'
   }).then(function(result) {
     var body = document.getElementsByTagName("body")[0];
     var previousSnackbar = document.getElementsByClassName('snackbar-wrapper');
